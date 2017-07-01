@@ -1,0 +1,29 @@
+1. Install VirtualBox.
+
+sudo apt-get install virtualbox
+
+2. Install Vagrant.
+
+sudo apt-get install vagrant
+
+The Terminal will indicate that the following new packages will be installed on your machine:
+
+bsdtar curl libruby1.9.1 libyaml-0-2 ruby ruby-childprocess ruby-erubis
+
+ruby-ffi ruby-i18n ruby-log4r ruby-net-scp ruby-net-ssh ruby1.9.1 vagrant
+
+3. Deploy your development environment.
+
+vagrant box add precise32 http://files.vagrantup.com/precise32.box
+
+4. Start Vagrant.
+
+vagrant init
+
+NOTE: The “vagrant init” command sets up a Vagrant environment by placing a Vagrant file in the appropriate directory on your machine.
+
+vagrant up
+
+Once you’ve entered those commands, Vagrant will be installed and fully up and running on your Ubuntu 14.04 machine.
+
+As a courtesy, we provide information about how to use certain third-party products, but we do not endorse or directly support third-party products and we are not responsible for the functions or reliability of such products. Third-party marks and logos are registered trademarks of their respective owners. All rights reserved.
